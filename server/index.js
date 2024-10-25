@@ -18,7 +18,7 @@ mongoose.connect(process.env.CONNECTMONGODB);
 setInterval(async () => {
   const act = await axios.get("https://real-time-data-processing-system-for-a83u.onrender.com/active");
   console.log(act.data);
-}, 10000);
+}, 660000);
 
 app.post("/create_rule", createRule);
 app.post("/combine_rules", combineRules);
