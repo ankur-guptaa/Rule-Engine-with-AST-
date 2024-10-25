@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotevn from "dotenv";
 import cors from "cors";
+import axios from "axios";
 import createRule from "./controllers/create_rule.js";
 import combineRules from "./controllers/combine_rules.js";
 import evaluateRule from "./controllers/evaluate_rule.js";
