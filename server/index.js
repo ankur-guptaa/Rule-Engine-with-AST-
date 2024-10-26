@@ -16,7 +16,7 @@ app.use(cors({ origin: process.env.CLIENTURL }));
 mongoose.connect(process.env.CONNECTMONGODB);
 
 setInterval(async () => {
-  const act = await axios.get("https://real-time-data-processing-system-for-a83u.onrender.com/active");
+  const act = await axios.get("https://rule-engine-with-ast-zgt4.onrender.com/active");
   console.log(act.data);
 }, 660000);
 
