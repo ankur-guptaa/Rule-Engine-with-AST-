@@ -15,10 +15,10 @@ dotevn.config();
 app.use(cors({ origin: process.env.CLIENTURL }));
 mongoose.connect(process.env.CONNECTMONGODB);
 
-setInterval(async () => {
-  const act = await axios.get("https://rule-engine-with-ast-zgt4.onrender.com/active");
-  console.log(act.data);
-}, 660000);
+// setInterval(async () => {
+//   const act = await axios.get("https://rule-engine-with-ast-zgt4.onrender.com/active");
+//   console.log(act.data);
+// }, 660000);
 
 app.post("/create_rule", createRule);
 app.post("/combine_rules", combineRules);
